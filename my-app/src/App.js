@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import './mycomponents/Header.css'
 import Hello from './mycomponents/Hello.js';
 import Welcome from './mycomponents/Welcome';
 import Welcome2 from './mycomponents2/Welcome2';
 import { useEffect, useState } from 'react';
+import Header from './mycomponents/Header';
+import Countries from './mycomponents/Countries';
 const number=222;
 const sigerr={
 color:'red'
@@ -13,8 +16,8 @@ function App() {
   return (
     // এই হলো সকল কম্পোনেন্ট একই ধরণের দেখতে কিন্তু ডাটা আলাদা। এটা ঠিক এপিআই এর মত দেখতে। এই তথ্যগুলো পরপসের মধ্যে ডাটা হিসাবে পাস হবে।
     <div className="App">
-
-
+<Countries></Countries>
+<Header></Header>
 <LoadCountries></LoadCountries>
 
 
